@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>My Blog</h1>
+</header>
+
+<div class="container">
+
+<button class="add-btn" onclick="showForm()">+ Add New Blog</button>
+
+<div id="formBox">
+  <h3>Add New Post</h3>
+  <input id="title" placeholder="Blog Title">
+  <textarea id="content" rows="6" placeholder="Blog Content..."></textarea><br><br>
+  <button class="save" onclick="saveBlog()">Save</button>
+  <button class="cancel" onclick="hideForm()">Cancel</button>
+</div>
+
+<h2>Blog Posts</h2>
+<div id="posts"></div>
+
+</div>
+
+<div class="footer">
+  Made by You 😄
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
